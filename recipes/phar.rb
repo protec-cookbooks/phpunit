@@ -18,7 +18,7 @@ directory "#{phpunit_dir}" do
     action :create
 end
 
-remote_file "#{phpunit_dir}/phpunit.phar" do
+remote_file "#{phpunit_dir}/phpunit" do
     source node[:phpunit][:phar_url]
     mode "0755"
 end
